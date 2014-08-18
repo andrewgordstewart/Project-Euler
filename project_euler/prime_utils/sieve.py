@@ -19,7 +19,7 @@ def sieve(n):              # returns prime sieve up to, but not including n
             is_prime[j] = False
 
     primes = []
-    for i in range(n):
+    for i in range(2, n):
         if is_prime[i]:
             primes.append(i)
 
@@ -30,5 +30,6 @@ def sieve(n):              # returns prime sieve up to, but not including n
 if __name__ == '__main__':
     # print is_prime(7)
 
-    print sieve(1000000)[-1]
+    print sieve(10000)[-1]
+    print sieve(20)
 
