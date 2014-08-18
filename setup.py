@@ -12,7 +12,7 @@ config = {
 	'version': '0.1',
 	'install_requires': ['nose'],
 	'modules': [],
-	'packages': ['project_euler'],
+	'packages': ['project_euler', 'project_euler.math_functions'],
 	'scripts': [],
 	'name': 'project_euler_utilities'
 }
