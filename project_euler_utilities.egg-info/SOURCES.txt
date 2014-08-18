@@ -4,6 +4,10 @@ project_euler/hello.py
 project_euler/math_functions.py
 project_euler/math_functions/__init__.py
 project_euler/math_functions/fibo.py
+project_euler/prime_utils/__init__.py
+project_euler/prime_utils/factor.py
+project_euler/prime_utils/prime_tester.py
+project_euler/prime_utils/sieve.py
 project_euler_utilities.egg-info/PKG-INFO
 project_euler_utilities.egg-info/SOURCES.txt
 project_euler_utilities.egg-info/dependency_links.txt
