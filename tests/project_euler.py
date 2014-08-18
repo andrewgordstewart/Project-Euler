@@ -1,5 +1,5 @@
 from nose.tools import *
-import project_euler
+# import project_euler
 
 def setup():
 	print "SETUP!"

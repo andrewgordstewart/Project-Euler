@@ -2,7 +2,8 @@ import sieve
 sieve = sieve.sieve
 
 
-def prime_factors(n):
+
+def prime_factors(n):  # currently terribly inefficient for just one call.
     s = sieve(n/2+1)
     factors = [1]
     for i in s:
@@ -32,5 +33,6 @@ def factors_with_multiplicity(n):
 if __name__ == '__main__':
 
     print factors_with_multiplicity(600851475143)[-1]
+    print dir()
 
     pass
