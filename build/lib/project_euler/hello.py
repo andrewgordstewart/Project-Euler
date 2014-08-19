@@ -1,2 +1,4 @@
 def say_hi():
-    print "hello world"
+    print "hello world. how\'s it going?"
+
+# keyword: bananas
