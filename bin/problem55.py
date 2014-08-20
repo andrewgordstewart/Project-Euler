@@ -8,4 +8,3 @@ for i in range(n):
         lychrel_numbers.append(i)
 
 print len(lychrel_numbers)
-
