@@ -8,6 +8,7 @@ proj_eul.egg-info/requires.txt
 proj_eul.egg-info/top_level.txt
 proj_eul/math_functions/__init__.py
 proj_eul/math_functions/fibo.py
+proj_eul/math_functions/permutations.py
 proj_eul/prime_tools/__init__.py
 proj_eul/prime_tools/factor.py
 proj_eul/prime_tools/sieve.py

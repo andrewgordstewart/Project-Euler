@@ -46,7 +46,10 @@ def is_prime(n):
 if __name__ == '__main__':
     # print is_prime(7)
 
-    print prime_sieve(10000)[-1]
-    print prime_sieve(20)
-    print prime_sieve(3)
+    print primes_to_n(10000)[-1]
+    print primes_to_n(20)
+    print primes_to_n(3)
     print is_prime(4)
+    s = prime_sieve(10)
+    for i in s:
+        print i

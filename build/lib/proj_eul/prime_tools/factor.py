@@ -1,5 +1,3 @@
-import sieve
-
 def prime_decomposition(n):
     factor_list = prime_factors_with_multiplicity(n)
     factors = {}
@@ -29,9 +27,6 @@ def prime_factors_with_multiplicity(n):
     return li
 
 
-
-def foo(bar):
-    return None
 
 if __name__ == '__main__':
 

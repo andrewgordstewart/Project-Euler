@@ -24,11 +24,11 @@ def fib_printer(n):
 def fib_list(n):
     result = []
     a, b = 0, 1
-    while b < n:
+    while len(result) < n:
         result.append(b)
         a, b = b, a+b
     return result
 
 if __name__ == '__main__':
-    n = 100
-    fib_printer(n)
+    n = 13
+    print fib_list(n), len(fib_list(n))
