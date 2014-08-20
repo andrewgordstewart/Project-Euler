@@ -4,7 +4,7 @@ except ImportError:
 	from distutils.core import setup
 
 setup(
-	name='project_euler_utilities',
+	name='proj_eul',
 	description='Project Euler tools',
 	author='Andrew Stewart',
 	url='Nonexistant.',
@@ -12,8 +12,8 @@ setup(
 	author_email='kaptain.kayak@gmail.com',
 	version='0.1',
 	install_requires=['nose'],
-    packages=['project_euler',
-    			'project_euler.prime_tools',
-				'project_euler.math_functions',
-				'project_euler.string_tools']
+    packages=['proj_eul',
+    			'proj_eul.prime_tools',
+				'proj_eul.math_functions',
+				'proj_eul.string_tools']
 )

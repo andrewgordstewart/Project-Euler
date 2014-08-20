@@ -1,6 +1,6 @@
-import project_euler.math_functions.fibo
+import proj_eul.math_functions.fibo
 
-fib = project_euler.math_functions.fibo.fib_list
+fib = proj_eul.math_functions.fibo.fib_list
 
 n = int(raw_input("Please enter the integer parameter: "))
 # n = 50

@@ -1,4 +1,4 @@
-from project_euler.string_tools.palindrome import is_palindrome
+from proj_eul.string_tools.palindrome import is_palindrome
 
 pal = 0
 for i in range(100, 1000):
