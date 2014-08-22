@@ -1,12 +1,25 @@
-# insert i into the kth digit of n
-# # numbers are thoght to have infinitely many
-# # leading 0's, so insert(1, 2, 0) returns 100
-def insert(i, digit, number):
-    if i not in range(10):
+# insert 'char' into 'position'-th position of 'string'
+def insert(char, position, string):
+    if position > len(string):
         raise ValueError
-    N = 10 ** digit
-    return 10*N*(number/N) + N*i + (number - N*(number/N))
+
+    return string[:position] + char + string[position:]
+
+
+def digits(i, j, num):
+    if (i > j
+        or not isinstance(i, int)
+        or not isinstance(j, int)
+        or i < 0
+        or j < 0
+        ):
+        raise ValueError
+    s = str(num)
+    sub_string = s[i-1:j]
+    return int(sub_string)
 
 if __name__ == '__main__':
-    print insert(1, 2, 0)
-
+    # print insert(1, 2, 0)
+    # digits(2,2,3)
+    print digits(1, 2, 123456789)
+    print insert('0', 0, 'abcd')
