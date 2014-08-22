@@ -1,21 +1,19 @@
-# WARNING!!! factorial runtime!!!!
-def pandigital_numbers(list_of_digits):
-    if len(list_of_digits) == 0:
-        return []
-    elif len(list_of_digits) == 1:
-        return [str(list_of_digits[0])]
+from proj_eul.string_tools.tools import digits as _digits
 
-    result = []
+def wierd_prime_test(n):
+    if (_digits(2, 4, n) % 2 == 0
+        and _digits(3, 5, n) % 3 == 0
+        and _digits(4, 6, n) % 5 == 0
+        and _digits(5, 7, n) % 7 == 0
+        and _digits(6, 8, n) % 11 == 0
+        and _digits(7, 9, n) % 13 == 0
+        and _digits(8, 10, n) % 17 == 0
+        ):
+        return True
+    else:
+        return False
 
-    for i in list_of_digits:
+print wierd_prime_test(1406357289)
 
-        li = list_of_digits[:]
-        li.remove(i)
-        sub_numbers = pandigital_numbers(li)
+from proj_eul.string_tools.pandigital import pandigitals as _panner
 
-        for j in sub_numbers:
-            result.append(str(i) + str(j))
-    return result
-
-
-print len(pandigital_numbers([0, 1, 2, 3, 4, 5, 6, 7, 8]))
