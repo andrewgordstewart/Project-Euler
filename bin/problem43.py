@@ -13,7 +13,15 @@ def wierd_prime_test(n):
     else:
         return False
 
-print wierd_prime_test(1406357289)
+# print wierd_prime_test(1406357289)
 
 from proj_eul.string_tools.pandigital import pandigitals as _panner
 
+p = _panner(10)
+
+pan_sum = 0
+for s in p:
+    if wierd_prime_test(int(s)):
+        pan_sum += int(s)
+
+print pan_sum

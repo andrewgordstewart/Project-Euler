@@ -15,3 +15,4 @@ for i in abundant_numbers:
 
 x = sum(i for i in set(range(1,n)) - abundant_sums)
 print x
+

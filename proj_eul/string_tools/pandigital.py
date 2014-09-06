@@ -1,8 +1,10 @@
 from proj_eul.string_tools.tools import insert as _insert
 
-def is_pandigital(n):
+def is_pandigital(n, digits = 9):
     li = [i for i in str(n)]
-    for i in range(1, len(li)):
+    # print li, len(li)
+    for i in range(1, digits + 1):
+        # print i, str(i) in li
         if not str(i) in li:
             return False
     return True
@@ -29,5 +31,7 @@ if __name__ == '__main__':
     # print is_pandigital(1225)
     # print is_pandigital(12)
 
-    p = pandigitals(10)
-    print p.next()
+    # p = pandigitals(10)
+    # print p.next()
+
+    print is_pandigital(1234, 4)

@@ -14,6 +14,6 @@ setup(
 	install_requires=['nose'],
     packages=['proj_eul',
     			'proj_eul.prime_tools',
-				'proj_eul.math_functions',
+				'proj_eul.math_tools',
 				'proj_eul.string_tools']
 )

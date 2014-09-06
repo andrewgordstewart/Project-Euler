@@ -15,11 +15,20 @@ def fib2(n):
         a, b = b, a+b
     return result
 
+
 def fib_printer(n):
     a, b = 0, 1
     while b < n:
         print b
         a, b = b, a+b
+
+def fib_gen(n):
+    a, b = 0, 1
+    count = 0
+    while count < n:
+        yield b
+        a, b = b, a+b
+        count += 1
 
 def fib_list(n):
     result = []
@@ -31,4 +40,5 @@ def fib_list(n):
 
 if __name__ == '__main__':
     n = 13
-    print fib_list(n), len(fib_list(n))
+    # print fib_list(n), len(fib_list(n))
+

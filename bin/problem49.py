@@ -1,5 +1,5 @@
 from proj_eul.prime_tools.sieve import prime_sieve as _sieve
-from proj_eul.math_functions.permutations import is_perm as _is_perm
+from proj_eul.math_tools.permutations import is_perm as _is_perm
 
 n = 10000
 primes = [i for i in _sieve(n) if i >= n/10]

@@ -26,7 +26,7 @@ def prime_sieve(limit):
 def primes_to_n(limit):
     primes= prime_sieve(limit+1)
     list_of_primes = []
-    for i in primes:
+    for i in priimes:
             list_of_primes.append(i)
     return list_of_primes
 
@@ -54,7 +54,12 @@ def print_successive_primes(iterations, base=10):
 if __name__ == '__main__':
     # print is_prime(7)
 
-    print_successive_primes(5, 10)
+    # print_successive_primes(5, 10)
+
+    p = prime_sieve(100000000)
+    for i in range(20):
+        print p.next()
+    print p.next(), p.next(), p.next(), p.next(), p.next(), p.next()
 
     # print primes_to_n(10000)[-1]
     # print primes_to_n(20)

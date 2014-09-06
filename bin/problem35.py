@@ -1,5 +1,5 @@
 from proj_eul.prime_tools.sieve import primes_to_n as _sieve
-from proj_eul.math_functions.permutations import cyclic_permute as _cyclic_permute
+from proj_eul.math_tools.permutations import cyclic_permute as _cyclic_permute
 
 import timeit
 
